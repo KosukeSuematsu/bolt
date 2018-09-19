@@ -108,6 +108,7 @@ header button {
 .theme .sub_title {
   font-size: 30px;
   color: #c0c0c0;
+  font-family: "Raleway";
 }
 /*---------about_us---------*/
 .about_us {
@@ -203,6 +204,18 @@ header button {
   color: #777;
 }
 
+.skill .container {
+  text-align: center;
+}
+
+.skill_meters {
+  display: inline-block;
+}
+
+.skill_container {
+  text-align: center;
+}
+
 .skill {
   background-color: #4e4e4e;
 }
@@ -210,7 +223,7 @@ header button {
 .skill_title {
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 24px;
   font-family: "Raleway";
   font-weight: 300;
   padding-top: 70px;
