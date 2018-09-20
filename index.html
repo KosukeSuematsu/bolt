@@ -15,144 +15,141 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <script src="js/script.js"></script>
-      <header class="clearfix">
+    <header class="clearfix contact_header">
+      <div class="container">
+        <i class="fa fa-bolt fa-3x button_bolt" aria-hidden="true"></i>
+        <!-- buttonタグからaタグに変更 -->
+        <!-- navタグを削除 -->
+        <a class="Contact_button">Contact</a>
+        <!-- clearfixを削除 -->
+      </div>
+    </header>
+    <main>
+      <section class="theme">
         <div class="container">
-          <i class="fa fa-bolt fa-3x button_bolt" aria-hidden="true"></i>
-          <nav>
-            <button type="button" class="btn-theme btn-lg">Contact</button>
-          </nav>
-          <div class="clearfix"></div>
+          <h1 class="main_title">
+            Bolt Theme
+          </h1>
+          <h2 class="sub_title">
+            FREE BOOTSTRAP THEME
+          </h2>
         </div>
-      </header>
-      <main>
-        <section class="theme">
-          <div class="container">
-            <p class="main_title">
-              Bolt Theme
+      </section>
+      <section class="about_us clearfix">
+        <div class="container">
+          <div class="w_05 float_l img_iphone">
+            <img src="img/iphone.png" alt="">
+          </div>
+          <div class="about_us_text w_07 float_r">
+            <p class="main_title_about">
+              WHAT WE CAN DO?
             </p>
-            <p class="sub_title">
-              FREE BOOTSTRAP THEME
+            <p class="about_sentence">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
           </div>
-        </section>
-        <section class="about_us">
-          <div class="container">
-            <div class="clearfix">
-              <div class="w_05 float_l">
-                <img src="img/iphone.png" alt="">
-              </div>
-              <div class="about_us_text w_07 float_r">
-                <p class="main_title_about">
-                  WHAT WE CAN DO?
-                </p>
-                <p class="about_sentence">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container clearfix">
+          <div class="work_title">
+            <h2>OUR LATEST WORK</h2>
           </div>
-        </section>
-        <section class="work">
-          <div class="container clearfix">
-            <div class="work_title">
-              <h3>OUR LATEST WORK</h3>
+          <!-- figureタグを全てaタグに変更 -->
+          <!-- 画像を要素を上下統一 -->
+            <a href="#" class="float_l img_work">
+              <img src="img/01.jpg" alt="">
+            </a>
+            <a href="#" class="float_l img_work">
+              <img src="img/02.jpg" alt="">
+            </a>
+            <a href="#" class="float_l img_work">
+              <img src="img/03.jpg" alt="">
+            </a>
+            <a href="#" class="float_l img_work">
+              <img src="img/04.jpg"  alt="">
+            </a>
+            <a href="#" class="float_l img_work">
+              <img src="img/05.jpg" alt="">
+            </a>
+            <a href="#" class="float_l img_work">
+              <img src="img/06.jpg" alt="">
+            </a>
+          <div class="work_under_content">
+            <div class="work_text w_07 float_l">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
             </div>
-            <div class="contents_work-img_Upper clearfix">
-              <figure class="float_l">
-                <img src="img/01.jpg" alt="">
-              </figure>
-              <figure  class="float_l">
-                <img class="float_l" src="img/02.jpg" alt="">
-              </figure>
-              <figure class="float_l">
-                <img src="img/03.jpg" alt="">
-              </figure>
-            </div>
-            <div class="contents_work-img_Under clearfix">
-              <figure class="float_l">
-                <img src="img/04.jpg"  alt="">
-              </figure>
-              <figure class="float_l">
-                <img src="img/05.jpg" alt="">
-              </figure>
-              <figure class="float_l">
-                <img src="img/06.jpg" alt="">
-              </figure class="float_l work-img">
-            </div>
-            <div class="work_under_content">
-              <div class="work_text w_07 float_l">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-              </div>
-              <div class="float_l">
-                <p>
-                  <button type="button" class="btn btn-theme btn-lg">Email Me!</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="clearfix"></div>
-        <section class="skill">
-          <div class="container clearfix">
-            <div class="skill_title">
-              <h3>OUR SKILLS</h3>
-            </div>
-            <div class="skill_meters clearfix">
-              <figure class="float_l">
-                <img src="img/circle_01.png" alt="">
-                <figcaption>JavaScript</figcaption>
-              </figure>
-              <figure class="float_l">
-                <img src="img/circle_02.png" alt="">
-                <figcaption>Bootstrap</figcaption>
-              </figure>
-              <figure class="float_l">
-                <img src="img/circle_03.png" alt="">
-                <figcaption>WordPress</figcaption>
-              </figure>
-              <figure class="float_l">
-                <img src="img/circle_04.png" alt="">
-                <figcaption>Photoshop</figcaption>
-              </figure>
-            </div>
-          </div>
-        </section>
-        <section class="sns">
-          <div class="container clearfix">
-            <div class="sns_icons">
-              <div class="space_facebook float_l">
-                <p>
-                  <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                </p>
-              </div>
-              <div class="space_dribbble float_l">
-                <p>
-                  <i class="fa fa-dribbble fa-3x" aria-hidden="true"></i>
-                </p>
-              </div>
-                <div class="space_twitter float_l">
-                <p>
-                  <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                </p>
-              </div>
-              <div class="space_envelope float_l">
-                <p>
-                  <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="sign_wrapper">
-          <div class="container">
-            <div class="creaters-sign">
-              <p>Crafted ♥ by BlackTie.co</p>
+            <div class="float_l">
+              <p>
+                <button type="button" class="btn btn-theme btn-lg">Email Me!</button>
+              </p>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
+      <div class="clearfix"></div>
+      <section class="skill">
+        <div class="container clearfix">
+          <div class="skill_title">
+            <h2>OUR SKILLS</h2>
+          </div>
+          <div class="skill_meters clearfix">
+            <figure class="float_l">
+              <img src="img/circle_01.png" alt="">
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="float_l">
+              <img src="img/circle_02.png" alt="">
+              <figcaption>Bootstrap</figcaption>
+            </figure>
+            <figure class="float_l">
+              <img src="img/circle_03.png" alt="">
+              <figcaption>WordPress</figcaption>
+            </figure>
+            <figure class="float_l">
+              <img src="img/circle_04.png" alt="">
+              <figcaption>Photoshop</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="sns">
+        <nav class="container clearfix">
+          <div class="sns_icons">
+            <div class="space_facebook float_l">
+              <!-- aタグに変更 -->
+              <!-- aタグに属性を付与 -->
+              <a href="#">
+                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="space_dribbble float_l">
+              <a href="#">
+                <i class="fa fa-dribbble fa-3x" aria-hidden="true"></i>
+              </a>
+            </div>
+              <div class="space_twitter float_l">
+              <a href="#">
+                <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="space_envelope float_l">
+              <a href="#">
+                <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </main>
+    <footer class="sign_wrapper">
+        <div class="container">
+          <!-- アイコンをfontAwesomeに変更 -->
+          <div class="creaters-sign">
+            <p>Crafted <span class="fa fa-heart" aria-hidden="true"></span> by BlackTie.co</p>
+          </div>
+        </div>
+    </footer>
   </body>
+  <script src="js/script.js"></script>
 </html>

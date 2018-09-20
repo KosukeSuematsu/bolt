@@ -69,32 +69,48 @@ body {
   margin: 0 auto;
 }
 
-/*---------header---------*/
-
-header .container {
-  padding: 15px 0;
+img {
+  vertical-align: top;
 }
 
-header button {
-  display: block;
+/*---------header---------*/
+.contact_header {
+  padding: 15px 0; /*右上アイコンにpaddingのスタイルを付与していたが、headerそのものの上下の領域を広げて対応。*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.Contact_button {
   font-size: 12px;
   color: white;
   padding: 14px 12px;
   float: right;
   background-color: #74cfae;
+  transition: 0.3s;
+}
+
+.Contact_button:hover {
+  color:black;
 }
 
 .button_bolt {
   float: left;
+  color: #777;
 }
 
 /*---------theme---------*/
 .theme {
   background-color: #f2f2f2;
+  /*paddingをcontainerのさらに親要素であるthemeに入れた。*/
+  /*headerの高さの分(78px)だけ上方向の要素を増やしました。*/
+  padding: 328px 0 250px 0;
 }
 
 .theme .container {
-  padding: 250px 0;
   text-align: center;
 }
 
@@ -103,6 +119,7 @@ header button {
   font-weight: 700;
   padding-bottom: 20px;
   color: #74cfae;
+  font-family: "Raleway";/*font-familyを追加*/
 }
 
 .theme .sub_title {
@@ -113,16 +130,16 @@ header button {
 /*---------about_us---------*/
 .about_us {
   background-color: #74cfae;
+  padding-top: 50px;
 }
 
-.about_us img {
-  padding-top: 50px;
+.img_iphone {
+  text-align: center;
 }
 
 .about_us_text {
   text-align: center;
   color: white;
-  padding-top: 50px;
 }
 
 .main_title_about {
@@ -133,34 +150,47 @@ header button {
 .about_sentence {
   font-size: 18px;
   margin-top: 35px;
+  line-height: 1.5em;
   font-family: "Raleway";
 }
 /*---------container---------*/
 
 .work {
   background-color: #f2f2f2;
+  padding-top: 60px;/*子要素につけていたpaddingを削除して、こちらに追加*/
+  padding-bottom: 70px;/*子要素につけていたpaddingを削除して、こちらに追加*/
 }
 
-.work_title h3 {
+.work_title {
   font-family: "Raleway";
   font-size: 24px;
   font-weight: 300;
   color: #333;
-  padding: 60px 0 40px 0;
+  margin-bottom: 40px;/*paddingからmarginに変更*/
   text-align: center;
 }
 
-.container figure {
+.container .img_work {
   opacity: 0.7;
-}
-
-.container figure:hover {
-  opacity: 1;
   transition: 0.3s;
 }
 
-.contents_work-img_Upper figure:nth-child(-n+2){
-  margin: 0 100px 80px 0;
+.container .img_work:hover {
+  opacity: 1;
+}
+
+/*以下スタイルを大幅に変更*/
+.img_work:nth-child(-n+3) {
+  margin-right: 100px;
+}
+.img_work:nth-child(-n+4) {
+  margin-bottom: 80px;
+}
+.img_work:nth-child(n+5):nth-child(-n+6) {
+  margin-right: 100px;
+}
+.img_work:nth-child(n+5):nth-child(-n+7) {
+  margin-bottom: 90px;
 }
 
 .contents_work-img_Under figure:nth-child(-n+2){
@@ -183,11 +213,11 @@ header button {
   color: #ffffff;
   background-color: #74cfae;
   border-color: transparent;
+  transition: 0.3s;
 }
 
 .btn-theme:hover {
   color: black;
-  transition: 0.3s;
 }
 
 
@@ -196,8 +226,8 @@ header button {
 }
 
 .work .work_text {
-  margin: 0 90px 70px 0;
-  padding-left: 6%;
+  margin-right: 90px;/*margin-topの余白を親要素のbottomとして設定*/
+  margin-left: 6%;/*padidngからmarginに変更*/
   display: inline-block;
   font-size: 17px;
   letter-spacing: 1px;
@@ -218,6 +248,7 @@ header button {
 
 .skill {
   background-color: #4e4e4e;
+  padding: 70px 0;/*子要素に付与していた余白をこちらに付与*/
 }
 
 .skill_title {
@@ -226,8 +257,7 @@ header button {
   font-size: 24px;
   font-family: "Raleway";
   font-weight: 300;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 figcaption {
@@ -239,7 +269,7 @@ figcaption {
 }
 
 .skill_meters {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .sns {
@@ -253,52 +283,30 @@ figcaption {
 
 .sns .container {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.sns_icons div:nth-child(-n+4) {
+.sns_icons a:nth-child(-n+4) {
+  display: inline-block;
   width: 185px;
-  height: 100px;
+  padding: 25px 0;/*上下の余白をheightからpaddingに変更*/
   color: #74cfae;
-  margin: 200px 0;
-  position: relative;
+  transition: 0.3s;
+  opacity: 0.7;
 }
 
-.sns_icons .space_facebook p {
-  position: absolute;
-  top: 30%;
-  left: 43%;
-}
-
-.sns_icons .space_dribbble p {
-  position: absolute;
-  top: 30%;
-  left: 38%;
-}
-
-.sns_icons .space_twitter p {
-  position: absolute;
-  top: 30%;
-  left: 38%;
-}
-
-.sns_icons .space_envelope p {
-  position: absolute;
-  top: 30%;
-  left: 38%;
-}
-
-.sns_icons div:nth-child(-n+4):hover {
+.sns_icons a:nth-child(-n+4):hover {
   background-color: white;
-  cursor: pointer;
-  cursor: hand;
+  opacity: 1;/*transitionをhover前の要素移動*/
 }
 
 .sign_wrapper {
   background-color: #74cfae;
+  padding: 20px 0 25px 0;/*子要素に設定した上下の余白をこちらに変更*/
 }
 
 .creaters-sign {
-  padding: 20px 0 25px 0;
   color: white;
   font-family: "Raleway";
   text-align: right;
