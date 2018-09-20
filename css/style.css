@@ -2,6 +2,10 @@ body {
   width: 100%;
 }
 
+a {
+  display: inline-block;
+}
+
 .clearfix:after {
   content: "";
   clear: both;
@@ -93,7 +97,7 @@ img {
   transition: 0.3s;
 }
 
-.Contact_button:hover {
+.contact_button:hover {
   color:black;
 }
 
@@ -111,7 +115,7 @@ margin-top: 78px;
   background-color: #f2f2f2;
   /*paddingをcontainerのさらに親要素であるthemeに入れた。*/
   /*headerの高さの分(78px)だけ上方向の要素を増やしました。*/
-  padding: 250px 0 250px 0;
+  padding: 250px 0;
 }
 
 .theme .container {
@@ -134,10 +138,11 @@ margin-top: 78px;
 /*---------about_us---------*/
 .about_us {
   background-color: #74cfae;
+  padding-top: 50px;
 }
 
 .about_us .container {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 
 .img_iphone {
@@ -186,6 +191,10 @@ margin-top: 78px;
   opacity: 1;
 }
 
+.img_work_wrapper {
+  margin-bottom: 90px;
+}
+
 /*以下スタイルを大幅に変更*/
 .img_work_wrapper .img_work:nth-child(-n+2) {
   margin-right: 100px;
@@ -194,7 +203,7 @@ margin-top: 78px;
 
 .img_work_wrapper .img_work:nth-child(n+4):nth-child(-n+5){
   margin-right: 100px;
-  margin-bottom: 90px;
+  /*margin-bottom: 90px;*/
 }
 
 
@@ -206,15 +215,14 @@ margin-top: 78px;
   padding: 10px 30px;
   margin-bottom: 0;
   font-size: 18px;
-  border: 5px solid transparent;
   border-radius: 0px;
 }
 
 .btn-theme {
   color: #ffffff;
   background-color: #74cfae;
-  border-color: transparent;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .btn-theme:hover {
@@ -271,13 +279,12 @@ figcaption {
 
 .sns {
   background-color: #f2f2f2;
+  padding: 200px 0;
 }
 
 .sns .sns_icons{
   display: inline-block;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .sns .container {
