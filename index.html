@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="This is my portfolio site.
-    ">
+    <meta name="description" content="This is my portfolio site.">
     <meta name="keyword" contetnt="bolt, bootstrap, portfolio">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -15,35 +14,35 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="clearfix contact_header">
-      <div class="container">
+    <header class="contact_header">
+      <div class="container clearfix">
         <i class="fa fa-bolt fa-3x button_bolt" aria-hidden="true"></i>
         <!-- buttonタグからaタグに変更 -->
         <!-- navタグを削除 -->
-        <a class="Contact_button">Contact</a>
+        <a class="contact_button">Contact</a>
         <!-- clearfixを削除 -->
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="theme">
         <div class="container">
           <h1 class="main_title">
             Bolt Theme
           </h1>
-          <h2 class="sub_title">
+          <p class="sub_title">
             FREE BOOTSTRAP THEME
-          </h2>
+          </p>
         </div>
       </section>
-      <section class="about_us clearfix">
-        <div class="container">
+      <section class="about_us">
+        <div class="container clearfix">
           <div class="w_05 float_l img_iphone">
             <img src="img/iphone.png" alt="">
           </div>
           <div class="about_us_text w_07 float_r">
-            <p class="main_title_about">
+            <h2 class="main_title_about">
               WHAT WE CAN DO?
-            </p>
+            </h2>
             <p class="about_sentence">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
@@ -57,6 +56,7 @@
           </div>
           <!-- figureタグを全てaタグに変更 -->
           <!-- 画像を要素を上下統一 -->
+          <div class="img_work_wrapper">
             <a href="#" class="float_l img_work">
               <img src="img/01.jpg" alt="">
             </a>
@@ -75,19 +75,19 @@
             <a href="#" class="float_l img_work">
               <img src="img/06.jpg" alt="">
             </a>
-          <div class="work_under_content">
+          </div>
+          <div class="work_under_content clearfix">
             <div class="work_text w_07 float_l">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
             </div>
             <div class="float_l">
               <p>
-                <button type="button" class="btn btn-theme btn-lg">Email Me!</button>
+                <a class="btn btn-theme btn-lg">Email Me!</a>
               </p>
             </div>
           </div>
         </div>
       </section>
-      <div class="clearfix"></div>
       <section class="skill">
         <div class="container clearfix">
           <div class="skill_title">
@@ -114,26 +114,26 @@
         </div>
       </section>
       <section class="sns">
-        <nav class="container clearfix">
-          <div class="sns_icons">
-            <div class="space_facebook float_l">
+        <nav class="container">
+          <div class="sns_icons clearfix">
+            <div class="float_l">
               <!-- aタグに変更 -->
               <!-- aタグに属性を付与 -->
               <a href="#">
                 <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
               </a>
             </div>
-            <div class="space_dribbble float_l">
+            <div class="float_l">
               <a href="#">
                 <i class="fa fa-dribbble fa-3x" aria-hidden="true"></i>
               </a>
             </div>
-              <div class="space_twitter float_l">
+              <div class="float_l">
               <a href="#">
                 <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
               </a>
             </div>
-            <div class="space_envelope float_l">
+            <div class="float_l">
               <a href="#">
                 <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
               </a>
@@ -143,13 +143,13 @@
       </section>
     </main>
     <footer class="sign_wrapper">
-        <div class="container">
-          <!-- アイコンをfontAwesomeに変更 -->
-          <div class="creaters-sign">
-            <p>Crafted <span class="fa fa-heart" aria-hidden="true"></span> by BlackTie.co</p>
-          </div>
+      <div class="container">
+        <!-- アイコンをfontAwesomeに変更 -->
+        <div class="creaters-sign">
+          <p>Crafted <span class="fa fa-heart" aria-hidden="true"></span> by BlackTie.co</p>
         </div>
+      </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
-  <script src="js/script.js"></script>
 </html>

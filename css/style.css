@@ -84,7 +84,7 @@ img {
   background-color: white;
 }
 
-.Contact_button {
+.contact_button {
   font-size: 12px;
   color: white;
   padding: 14px 12px;
@@ -103,11 +103,15 @@ img {
 }
 
 /*---------theme---------*/
+.main {
+margin-top: 78px;
+}
+
 .theme {
   background-color: #f2f2f2;
   /*paddingをcontainerのさらに親要素であるthemeに入れた。*/
   /*headerの高さの分(78px)だけ上方向の要素を増やしました。*/
-  padding: 328px 0 250px 0;
+  padding: 250px 0 250px 0;
 }
 
 .theme .container {
@@ -117,7 +121,7 @@ img {
 .theme .main_title {
   font-size: 90px;
   font-weight: 700;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #74cfae;
   font-family: "Raleway";/*font-familyを追加*/
 }
@@ -130,6 +134,9 @@ img {
 /*---------about_us---------*/
 .about_us {
   background-color: #74cfae;
+}
+
+.about_us .container {
   padding-top: 50px;
 }
 
@@ -180,22 +187,16 @@ img {
 }
 
 /*以下スタイルを大幅に変更*/
-.img_work:nth-child(-n+3) {
+.img_work_wrapper .img_work:nth-child(-n+2) {
   margin-right: 100px;
-}
-.img_work:nth-child(-n+4) {
   margin-bottom: 80px;
 }
-.img_work:nth-child(n+5):nth-child(-n+6) {
+
+.img_work_wrapper .img_work:nth-child(n+4):nth-child(-n+5){
   margin-right: 100px;
-}
-.img_work:nth-child(n+5):nth-child(-n+7) {
   margin-bottom: 90px;
 }
 
-.contents_work-img_Under figure:nth-child(-n+2){
-  margin: 0 100px 90px 0;
-}
 
 .work_under_content {
   text-align: center;
@@ -248,7 +249,7 @@ img {
 
 .skill {
   background-color: #4e4e4e;
-  padding: 70px 0;/*子要素に付与していた余白をこちらに付与*/
+  padding: 70px 0 100px 0;/*子要素に付与していた余白をこちらに付与*/
 }
 
 .skill_title {
@@ -268,10 +269,6 @@ figcaption {
   margin-right:180px;
 }
 
-.skill_meters {
-  margin-bottom: 100px;
-}
-
 .sns {
   background-color: #f2f2f2;
 }
@@ -279,12 +276,12 @@ figcaption {
 .sns .sns_icons{
   display: inline-block;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .sns .container {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .sns_icons a:nth-child(-n+4) {
