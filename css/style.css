@@ -12,7 +12,7 @@ a {
   display: block;
 }
 
-.float_r {
+/*.float_r {
   float: right;
 }
 
@@ -66,7 +66,7 @@ a {
 
 .w_12 {
   width: 100%;
-}
+}*/
 
 .container {
   width: 1100px;
@@ -145,6 +145,10 @@ margin-top: 78px;
   padding: 250px 0;
 }
 
+.theme_br {
+  display: none;
+}
+
 .theme .container {
   text-align: center;
 }
@@ -170,11 +174,15 @@ margin-top: 78px;
 
 .img_iphone {
   text-align: center;
+  float: left;
+  width: 41.665%;
 }
 
 .about_us_text {
   text-align: center;
   color: white;
+  width: 58.331%;
+  float: right;
 }
 
 .main_title_about {
@@ -205,6 +213,10 @@ margin-top: 78px;
   text-align: center;
 }
 
+.img_work_content {
+  float: left;
+}
+
 .container .img_work {
   opacity: 0.7;
   transition: 0.3s;
@@ -219,12 +231,12 @@ margin-top: 78px;
 }
 
 /*以下スタイルを大幅に変更*/
-.img_work_wrapper .img_work:nth-child(-n+2) {
+.img_work_wrapper .img_work_content:nth-child(-n+2) {
   margin-right: 100px;
   margin-bottom: 80px;
 }
 
-.img_work_wrapper .img_work:nth-child(n+4):nth-child(-n+5){
+.img_work_wrapper .img_work_content:nth-child(n+4):nth-child(-n+5){
   margin-right: 100px;
 }
 
@@ -262,6 +274,12 @@ margin-top: 78px;
   font-size: 17px;
   letter-spacing: 1px;
   color: #777;
+  width: 58.331%;
+  float: left;
+}
+
+.work_button {
+  float: left;
 }
 
 .skill .container {
@@ -270,6 +288,10 @@ margin-top: 78px;
 
 .skill_meters {
   display: inline-block;
+}
+
+.skill_meters figure {
+  float: left;
 }
 
 .skill_container {
@@ -308,11 +330,11 @@ figcaption {
   text-align: center;
 }
 
-.sns .container {
-  text-align: center;
+.sns .sns_icons div{
+  float: left;
 }
 
-.sns_icons a:nth-child(-n+4) {
+.sns .sns_icons a{
   display: inline-block;
   width: 185px;
   padding: 25px 0;/*上下の余白をheightからpaddingに変更*/
@@ -321,7 +343,11 @@ figcaption {
   opacity: 0.7;
 }
 
-.sns_icons a:nth-child(-n+4):hover {
+.sns .container {
+  text-align: center;
+}
+
+.sns_icons a:hover {
   background-color: white;
   opacity: 1;/*transitionをhover前の要素移動*/
 }

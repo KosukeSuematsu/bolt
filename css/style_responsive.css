@@ -1,49 +1,42 @@
 @media (max-width: 1200px) {
-  .about_us .w_05 {
+  .main {
+    margin-top: 94px;
+  }
+  .img_iphone {
     width: 100%;
   }
-  .about_us .w_07 {
+  .about_us_text {
     width: 100%;
-  }
-  .main_title_about {
     margin-top: 20px;
   }
   .about_us {
     padding-bottom: 25px;
   }
   .container {
-    width: 80%;
+    width: 97%;
   }
-  .contact_header .container {
-    width: 95%;
-  }
-  .work .container {
-    width: 90%;
-  }
-  .sign_wrapper .container {
-    width: 95%;
-  }
-  .img_work_wrapper .img_work{
-    text-align: center;
+
+  .img_work_content {
     width: 100%;
+    text-align: center;
   }
-  .img_work_wrapper .img_work:nth-child(-n+2) {
+  .img_work_wrapper .img_work_content:nth-child(-n+2) {
     margin-right: 0;
     margin-bottom: 0;
   }
-  .img_work_wrapper .img_work:nth-child(n+4):nth-child(-n+5){
+  .img_work_wrapper .img_work_content:nth-child(n+4):nth-child(-n+5){
     margin-right: 0;
   }
-  .img_work_wrapper .img_work:nth-child(3){
+  .img_work_wrapper .img_work_content:nth-child(3n){
     margin-bottom: 80px;
   }
   .work .work_text {
-    clear: both;
+    float: none;
     width: 100%;
     margin: 0 0;
   }
   .work_button {
-    clear: both;
+    float: none;
     width: 100%;
     margin-top: 40px;
   }
@@ -52,16 +45,24 @@
     margin-bottom: 88px;
   }
   .skill_meters figure {
-    clear: both;
+    float: none;
   }
   .fa-3x {
     font-size: 4em;
   }
 }
 @media (max-width: 767px) {
+  .main {
+    margin-top: 110px;
+  }
   .theme {
     padding: 160px 0 130px 0;
   }
+
+  .theme_br {
+  display: block;
+  }
+
   .theme .main_titile {
     font-size: 80px;
   }
@@ -74,10 +75,8 @@
   .sns .sns_icons {
     display: block;
   }
-  .sns .sns_icons .float_l:nth-child(-n+4) {
+  .sns .sns_icons div {
     float: none;
-  }
-  .sns_icons a:nth-child(-n+4){
     width: 100%;
   }
   .sns{
