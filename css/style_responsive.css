@@ -15,10 +15,10 @@
   .container {
     width: 97%;
   }
-
   .img_work_content {
     width: 100%;
     text-align: center;
+    float: none;
   }
   .img_work_wrapper .img_work_content:nth-child(-n+2) {
     margin-right: 0;
@@ -29,6 +29,9 @@
   }
   .img_work_wrapper .img_work_content:nth-child(3n){
     margin-bottom: 80px;
+  }
+  .img_work_wrapper .img_work_content:last-child {
+    margin-bottom: 0;
   }
   .work .work_text {
     float: none;
@@ -58,19 +61,11 @@
   .theme {
     padding: 160px 0 130px 0;
   }
-
   .theme_br {
   display: block;
   }
-
   .theme .main_titile {
     font-size: 80px;
-  }
-  .container {
-    width: 100%;
-  }
-  .img_work_wrapper img {
-    width: 100%;
   }
   .sns .sns_icons {
     display: block;
