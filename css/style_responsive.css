@@ -1,0 +1,118 @@
+@media (max-width: 1200px) {
+  .about_us .w_05 {
+    width: 100%;
+  }
+  .about_us .w_07 {
+    width: 100%;
+  }
+  .main_title_about {
+    margin-top: 20px;
+  }
+  .about_us {
+    padding-bottom: 25px;
+  }
+  .container {
+    width: 80%;
+  }
+  .contact_header .container {
+    width: 95%;
+  }
+  .work .container {
+    width: 90%;
+  }
+  .sign_wrapper .container {
+    width: 95%;
+  }
+  .img_work_wrapper .img_work{
+    text-align: center;
+    width: 100%;
+  }
+  .img_work_wrapper .img_work:nth-child(-n+2) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .img_work_wrapper .img_work:nth-child(n+4):nth-child(-n+5){
+    margin-right: 0;
+  }
+  .img_work_wrapper .img_work:nth-child(3){
+    margin-bottom: 80px;
+  }
+  .work .work_text {
+    clear: both;
+    width: 100%;
+    margin: 0 0;
+  }
+  .work_button {
+    clear: both;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .skill_meters figure:nth-child(-n+3) {
+    margin-right: 0;
+    margin-bottom: 88px;
+  }
+  .skill_meters figure {
+    clear: both;
+  }
+  .fa-3x {
+    font-size: 4em;
+  }
+}
+@media (max-width: 767px) {
+  .theme {
+    padding: 160px 0 130px 0;
+  }
+  .theme .main_titile {
+    font-size: 80px;
+  }
+  .container {
+    width: 100%;
+  }
+  .img_work_wrapper img {
+    width: 100%;
+  }
+  .sns .sns_icons {
+    display: block;
+  }
+  .sns .sns_icons .float_l:nth-child(-n+4) {
+    float: none;
+  }
+  .sns_icons a:nth-child(-n+4){
+    width: 100%;
+  }
+  .sns{
+    padding: 50px 15px;
+  }
+  .fa-3x {
+    font-size: 5em;
+  }
+  .sign_wrapper {
+    padding: 30px 0 45px 0;
+  }
+  .sign_wrapper .container {
+    width: 90%;
+  }
+  .creaters-sign {
+    font-size: 23px;
+  }
+  .contact_button {
+    display: none;
+  }
+  .wrapper_menu-bars {
+    display: block;
+  }
+  .under_menu-bar {
+    width: 100%;
+    z-index: 999;
+    display: block;
+  }
+  .contact_button_under {
+    display: block;
+    font-size: 12px;
+    padding: 10px 0;
+    color: white;
+    background-color: #74cfae;
+    transition: 0.3s;
+    padding-left: 10px;
+  }
+}
